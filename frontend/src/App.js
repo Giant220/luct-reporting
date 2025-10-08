@@ -461,7 +461,7 @@ function App() {
 
   // Student Monitoring View
   const StudentMonitoring = () => {
- const studentReports = reports;
+  const studentReports = reports;
 
     return (
       <div>
