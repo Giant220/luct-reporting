@@ -3,7 +3,7 @@ import axios from 'axios';
 import './App.css';
 
 // Set base URL for API
-axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'https://luct-backend-ddza.onrender.com';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -461,9 +461,7 @@ function App() {
 
   // Student Monitoring View
   const StudentMonitoring = () => {
-    const studentReports = reports.filter(report => 
-      report.class_name.includes('BIOP2110') || report.class_name.includes('BIMT2108')
-    );
+ const studentReports = reports;
 
     return (
       <div>
